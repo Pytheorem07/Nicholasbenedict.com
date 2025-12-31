@@ -97,6 +97,7 @@
             </div>
             <div class="order-1 md:order-2 relative flex justify-center">
                 <div class="w-64 h-64 sm:w-80 sm:h-80 md:w-full md:max-w-md aspect-square chess-gradient rounded-full flex items-center justify-center border-4 border-[#1e2329] relative overflow-hidden group">
+                    <!-- SVG Chess Piece (King/Queen hybrid) -->
                     <svg class="w-2/3 h-2/3 text-[#d4af37] opacity-80 group-hover:scale-110 transition duration-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M19 22H5V20H19V22ZM17 19H7V17H17V19ZM15 16H9L10 9H14L15 16ZM12 2C10.9 2 10 2.9 10 4C10 4.6 10.3 5.1 10.7 5.5L10 8H14L13.3 5.5C13.7 5.1 14 4.6 14 4C14 2.9 13.1 2 12 2Z" fill="currentColor"/>
                     </svg>
@@ -192,8 +193,8 @@
                 Nicholasbenedict2007 is now accepting inquiries for tournament appearances, league play, exhibition matches, and as a coach both virtual and in person. Witness the online mastery transition to the big stage.
             </p>
             
-            <form action="https://formspree.io/f/https://formspree.io/f/xykzyyko" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                <!-- Field Names are critical for Formspree to map them correctly -->
+            <!-- FORM ACTION CONFIGURED FOR: xykzyyko -->
+            <form id="portfolio-form" action="https://formspree.io/f/xykzyyko" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div class="flex flex-col">
                     <label class="text-[10px] uppercase text-gray-500 mb-2 font-bold tracking-widest">Name</label>
                     <input type="text" name="name" id="full-name" required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm">
@@ -217,7 +218,7 @@
                     <label class="text-[10px] uppercase text-gray-500 mb-2 font-bold tracking-widest">Message</label>
                     <textarea name="message" id="message" rows="4" placeholder="Describe your request or event details..." required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm"></textarea>
                 </div>
-                <!-- Honeypot to prevent spam -->
+                <!-- Anti-spam honey pot -->
                 <input type="text" name="_gotcha" style="display:none" />
                 
                 <button type="submit" class="md:col-span-2 bg-[#d4af37] text-black font-bold py-4 uppercase tracking-widest hover:bg-yellow-500 transition text-sm">Submit Request</button>
@@ -242,10 +243,6 @@
         // Automatically updates the year in the footer
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-
-</body>
-</html>
-    </footer>
 
 </body>
 </html>
