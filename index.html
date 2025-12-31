@@ -193,29 +193,33 @@
             </p>
             
             <form action="https://formspree.io/f/https://formspree.io/f/xykzyyko" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <!-- Field Names are critical for Formspree to map them correctly -->
                 <div class="flex flex-col">
                     <label class="text-[10px] uppercase text-gray-500 mb-2 font-bold tracking-widest">Name</label>
-                    <input type="text" name="name" required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm">
+                    <input type="text" name="name" id="full-name" required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm">
                 </div>
                 <div class="flex flex-col">
-                    <label class="text-[10px] uppercase text-gray-500 mb-2 font-bold tracking-widest">Email</label>
-                    <input type="email" name="email" required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm">
+                    <label class="text-[10px] uppercase text-gray-500 mb-2 font-bold tracking-widest">Email Address</label>
+                    <input type="email" name="email" id="email-address" required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm">
                 </div>
                 <div class="md:col-span-2 flex flex-col">
                     <label class="text-[10px] uppercase text-gray-500 mb-2 font-bold tracking-widest">Inquiry Type</label>
-                    <select name="type" class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm appearance-none">
-                        <option>In-Person Coaching</option>
-                        <option>Virtual Coaching</option>
-                        <option>Tournament Invitation</option>
-                        <option>Exhibition Match</option>
-                        <option>League Inquiry</option>
-                        <option>Other</option>
+                    <select name="type" id="inquiry-type" class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm appearance-none">
+                        <option value="In-Person Coaching">In-Person Coaching</option>
+                        <option value="Virtual Coaching">Virtual Coaching</option>
+                        <option value="Tournament Invitation">Tournament Invitation</option>
+                        <option value="Exhibition Match">Exhibition Match</option>
+                        <option value="League Inquiry">League Inquiry</option>
+                        <option value="Other">Other</option>
                     </select>
                 </div>
                 <div class="md:col-span-2 flex flex-col">
                     <label class="text-[10px] uppercase text-gray-500 mb-2 font-bold tracking-widest">Message</label>
-                    <textarea name="message" rows="4" placeholder="Describe your request or event details..." required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm"></textarea>
+                    <textarea name="message" id="message" rows="4" placeholder="Describe your request or event details..." required class="bg-[#1a1d23] border border-gray-800 p-4 focus:border-[#d4af37] outline-none text-white rounded-sm text-sm"></textarea>
                 </div>
+                <!-- Honeypot to prevent spam -->
+                <input type="text" name="_gotcha" style="display:none" />
+                
                 <button type="submit" class="md:col-span-2 bg-[#d4af37] text-black font-bold py-4 uppercase tracking-widest hover:bg-yellow-500 transition text-sm">Submit Request</button>
             </form>
         </div>
