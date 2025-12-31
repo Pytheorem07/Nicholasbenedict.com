@@ -100,9 +100,9 @@
                         <path d="M19 22H5V20H19V22ZM17 19H7V17H17V19ZM15 16H9L10 9H14L15 16ZM12 2C10.9 2 10 2.9 10 4C10 4.6 10.3 5.1 10.7 5.5L10 8H14L13.3 5.5C13.7 5.1 14 4.6 14 4C14 2.9 13.1 2 12 2Z" fill="currentColor"/>
                     </svg>
                     <!-- Floating Badge -->
-                    <div class="absolute bottom-10 right-10 bg-black p-4 border border-[#d4af37] rounded-lg shadow-2xl animate-pulse">
-                        <div class="text-xs uppercase text-gray-500 font-bold">Global Standing</div>
-                        <div class="text-xl font-bold gold-text">Bullet Specialist</div>
+                    <div class="absolute bottom-10 right-10 bg-black p-4 border border-[#d4af37] rounded-lg shadow-2xl animate-pulse text-center">
+                        <div class="text-xs uppercase text-gray-500 font-bold">Global Percentile</div>
+                        <div class="text-xl font-bold gold-text">Top 0.1%</div>
                     </div>
                 </div>
             </div>
@@ -116,15 +116,15 @@
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="text-center">
                     <div class="text-4xl md:text-5xl font-bold gold-text mb-2">30,000+</div>
-                    <div class="text-gray-500 uppercase tracking-widest text-xs">Games on Chess.com</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl md:text-5xl font-bold gold-text mb-2">Top 1%</div>
-                    <div class="text-gray-500 uppercase tracking-widest text-xs">Global Ranking</div>
+                    <div class="text-gray-500 uppercase tracking-widest text-xs">Games Played</div>
                 </div>
                 <div class="text-center">
                     <div class="text-4xl md:text-5xl font-bold gold-text mb-2">Elite</div>
                     <div class="text-gray-500 uppercase tracking-widest text-xs">Bullet Specialist</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold gold-text mb-2">Top 0.1%</div>
+                    <div class="text-gray-500 uppercase tracking-widest text-xs">Global Ranking</div>
                 </div>
                 <div class="text-center">
                     <div class="text-4xl md:text-5xl font-bold gold-text mb-2">∞</div>
@@ -140,7 +140,7 @@
             <div class="flex flex-col md:flex-row gap-16">
                 <div class="md:w-1/3">
                     <h2 class="text-4xl font-bold mb-6">Unrated <br><span class="gold-text">Undefeated.</span></h2>
-                    <p class="text-gray-400 mb-6 italic">"Nicholasbenedict2007's journey began at about the age of three. His lack of a formal FIDE title isn't a reflection of his strength, but a result of his path: having never played rated Over-The-Board (OTB) chess, he remains the online arena's best-kept secret."</p>
+                    <p class="text-gray-400 mb-6 italic text-sm leading-relaxed">"Nicholasbenedict2007's journey began at about the age of three. His lack of a formal FIDE title isn't a reflection of his strength, but a result of his path: having never played rated Over-The-Board (OTB) chess, he remains the online arena's best-kept secret."</p>
                     <div class="h-1 w-20 bg-[#d4af37]"></div>
                 </div>
                 <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -188,10 +188,9 @@
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-5xl font-bold mb-8">Work with <span class="gold-text">Nicholas.</span></h2>
             <p class="text-gray-400 mb-12 text-lg">
-                Nicholasbenedict2007 is now accepting inquiries for <strong>tournament appearances</strong>, league play, exhibition matches, and as a <strong>coach</strong> both virtual and in person. Witness the online mastery transition to the big stage.
+                Nicholasbenedict2007 is now accepting inquiries for tournament appearances, league play, exhibition matches, and as a coach both virtual and in person. Witness the online mastery transition to the big stage.
             </p>
             
-            <!-- Replace YOUR_FORM_ID_HERE with the ID from Formspree -->
             <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                 <div class="flex flex-col">
                     <label class="text-xs uppercase text-gray-500 mb-2 font-bold tracking-widest">Name</label>
@@ -209,6 +208,7 @@
                         <option>Tournament Invitation</option>
                         <option>Exhibition Match</option>
                         <option>League Inquiry</option>
+                        <option>Other</option>
                     </select>
                 </div>
                 <div class="md:col-span-2 flex flex-col">
@@ -224,10 +224,10 @@
     <footer class="py-12 border-t border-gray-900 px-6 text-center">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
             <div class="font-bold uppercase tracking-widest mb-4 md:mb-0">Nicholasbenedict<span class="text-gray-400">2007</span></div>
-            <div class="flex space-x-6 text-xl mb-4 md:mb-0">
-                <a href="https://www.chess.com/member/nicholasbenedict2007" target="_blank" class="hover:text-[#d4af37]"><i class="fas fa-chess-knight"></i></a>
-                <a href="#" class="hover:text-[#d4af37]"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="hover:text-[#d4af37]"><i class="fab fa-twitch"></i></a>
+            <div class="flex space-x-6 text-2xl mb-4 md:mb-0">
+                <a href="https://www.chess.com/member/nicholasbenedict2007" target="_blank" class="hover:text-[#d4af37]" title="Chess.com Profile">
+                    <i class="fas fa-chess-board"></i>
+                </a>
             </div>
             <div>&copy; 2026 Nicholasbenedict2007 | Bullet Legend.</div>
         </div>
